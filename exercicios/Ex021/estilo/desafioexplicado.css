@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family: 'Android';
+    scr: url('') format('opentyme');
+    font-weight: normal;
+}
+/*
+#c5ebd6
+#83e1ad
+#3ddc84
+#2fa866
+#1a5c37
+#063d1e
+*/
+
+:root{
+    --0: #c5ebd6;
+    --1: #83e1ad;
+    --2: #3ddc84;
+    --3: #2fa866;
+    --4: #1a5c37;
+    --5: #063d1e;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bolas Neve', 'cursive';
+    --fonte-android: 'Android', 'cursive';
+}
+body{
+    background-color: #c5ebd6;
+    font-family: var(--fonte-padrao);
+}
+header > h1{
+    color: #3ddc84;
+    font-family: var(--fonte-destaque);
+}
+main h1{
+    color: #1a5c37;
+    font-family: var(--fonte-android);
+}
+main h2{
+    font-family: var(--fonte-android);
+}

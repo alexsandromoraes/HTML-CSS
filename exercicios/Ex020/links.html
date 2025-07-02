@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        a{
+            color: green;
+            text-decoration: none;
+        }
+        a:visited{
+            color: darkorchid;
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        .especial{
+            background-color: rgba(173, 247, 173, 0.832);
+        }
+        .especial::after{
+            content: '<=[vsf]';
+        }
+        .especial::before{
+            content: '=>';
+        }
+    </style>
+</head>
+<body>
+    <h2>Personalizando Links</h2>
+    <ul>
+        <li><a href="https://youtube.com/alanzoka/" target="_blank">canal alanzoka</a></li>
+        <li><a href="https://youtube.com/nerdpack/" target="_blank" class="especial">Canal Nerdpack</a></li>
+        <li><a href="https://youtube.com/voicemakers/" target="_blank" class="especial"> Voice Makers</a>
+        </li>
+    </ul>
+    
+</body>
+</html>
