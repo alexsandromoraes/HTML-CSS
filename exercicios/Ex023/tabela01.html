@@ -12,6 +12,11 @@
             width: 400px;
             border-collapse: collapse;
         }
+
+        #def{
+            height: 300px;
+            text-align: right;
+        }
         tr#A3{
             background-color: lightgray;
         }
@@ -21,6 +26,13 @@
         }
         .yy{
             background-color: yellow;
+        }
+
+        .ver{
+            vertical-align: top;
+            text-align: center;
+            color: red;
+            font-weight: bold;
         }
     </STYLE>
 </head>
@@ -43,9 +55,34 @@
             <td>C3</td>
         </tr>
         <tr>
-            <td>A4</td>
+            <td class="yy">A4</td>
             <td>B4</td>
             <td class="yy">C4</td>      
+        </tr>
+    </table>
+<br>
+<hr>
+<br>
+    <table id="def">
+        <tr> <!--Segunda tabela-->
+            <td>D1</td>
+            <td>E1</td>
+            <td>F1</td>
+        </tr>
+        <tr class="ver">
+            <td>D2</td>
+            <td>E2</td>
+            <td>F2</td>
+        </tr>
+        <tr>
+            <td>D3</td>
+            <td>E3</td>
+            <td>F3</td>
+        </tr>
+        <tr class="ver">
+            <td>D4</td>
+            <td>E4</td>
+            <td>F4</td>      
         </tr>
     </table>
 </body>
