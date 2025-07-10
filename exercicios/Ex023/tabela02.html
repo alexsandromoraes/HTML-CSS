@@ -17,13 +17,34 @@
             background-color:gray;
             color: white;
         }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(2n){
+            /* numero+n, odd(impar), even(par)*/
+            background-color: lightgray;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 5px;
+            background-color: rgba(211, 211, 211, 0.614);
+        }
+
         td, th{
             padding: 7px;
-            width: 200px;
+            width: 300px;
             border: 1px solid black;
         }
+
         .num{
             text-align: right;
+            width: 110px;
         }
     </style>
 </head>
@@ -42,10 +63,11 @@
      -->
     
     <table>
+        <caption>População por Estado</caption>
         <thead>
             <tr>
-                <th>Estação</th>
-                <th>População</th>
+                <th scope="col">Estação</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -162,11 +184,10 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="num"><strong>210.147.125</strong></td>
             </tr>
         </tfoot>
     </table>
-    
 </body>
 </html>
