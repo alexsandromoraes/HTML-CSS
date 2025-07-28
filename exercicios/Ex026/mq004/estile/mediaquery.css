@@ -21,6 +21,11 @@ dados de 2020(desatualizado)
 
     main{
         border:2px solid black;
+        width: 90vw;
+    }
+
+    main::after{
+        content: 'Essa é uma impessão que fiz enquanto morria de gripe e vendo o vídeo do Gustavo Guanabara.';
     }
 
     main h1{
