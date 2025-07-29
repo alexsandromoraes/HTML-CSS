@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+/*Mobile First*/
+
+*{
+ margin: 0px;
+ padding: 0px;
+}
+
+body{
+    background-color: rgb(203, 199, 199);
+    font-family: Arial, Helvetica, sans-serif;   
+}
+
+header{
+    background-color: rgb(148, 148, 148);
+
+}
+
+header h1{
+    text-align: center;
+    padding: 10px;
+}
+
+span#puta{
+    background-color: rgb(16, 15, 15);
+    width: 96vw;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+span#puta:hover{
+    background-color: white;
+    color: black;
+}
+
+menu{
+    display: none;
+}
+
+menu ul{
+    list-style-type: none;
+}
+
+menu li{
+    background-color: rgb(87, 87, 87);
+}
+
+menu > ul > li > a{
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 6px;
+    text-decoration: none;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.588);
+    border-top: 1px solid gray;
+}
+
+menu > ul > li > a:hover{
+    background-color: grey;
+    font-weight: bolder;
+    font-size: 1.1em;
+}
+
+main{
+    width: 90vw;
+    background-color: white;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+article > h2{
+    padding: 10px;
+}
+
+article > p{
+    text-align: justify;
+    margin-bottom: 10px;
+    text-indent: 20px;
+}
+
