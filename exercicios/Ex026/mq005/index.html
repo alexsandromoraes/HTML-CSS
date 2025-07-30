@@ -6,8 +6,9 @@
     <title>D Media Query</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mq.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu site</h1>
         <span id="puta" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
@@ -29,10 +30,17 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quasi inventore natus, omnis iusto saepe impedit quod beatae pariatur nam molestias. Similique officiis soluta assumenda deleniti praesentium. Debitis, esse facere. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ullam ipsam repellendus harum alias nesciunt eligendi impedit quaerat atque, sapiente exercitationem quas quia aspernatur aliquam incidunt ipsa quidem quis reiciendis.</p>
 
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos asperiores corporis molestiae voluptatum eius quibusdam ipsa magnam blanditiis. Maiores dicta quibusdam nihil error modi molestias ab atque facilis vel delectus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ullam ipsam repellendus harum alias nesciunt eligendi impedit quaerat atque, sapiente exercitationem quas quia aspernatur aliquam incidunt ipsa quidem quis reiciendis.</p>
+
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam voluptatum dolorum eum nam a veniam deserunt beatae voluptatem illum quos, totam facere consequatur dolores perferendis distinctio optio facilis consequuntur molestias. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ullam ipsam repellendus harum alias nesciunt eligendi impedit quaerat atque, sapiente exercitationem quas quia aspernatur aliquam incidunt ipsa quidem quis reiciendis.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quasi inventore natus, omnis iusto saepe impedit quod beatae pariatur nam molestias. Similique officiis soluta assumenda deleniti praesentium. Debitis, esse facere. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ullam ipsam repellendus harum alias nesciunt eligendi impedit quaerat atque, sapiente exercitationem quas quia aspernatur aliquam incidunt ipsa quidem quis reiciendis.</p>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos asperiores corporis molestiae voluptatum eius quibusdam ipsa magnam blanditiis. Maiores dicta quibusdam nihil error modi molestias ab atque facilis vel delectus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ullam ipsam repellendus harum alias nesciunt eligendi impedit quaerat atque, sapiente exercitationem quas quia aspernatur aliquam incidunt ipsa quidem quis reiciendis.</p>
         </article>
     </main>
     
     <script>
+
         function clickMenu() {
             if (mens.style.display == 'block'){
                 mens.style.display = 'none'
@@ -40,6 +48,15 @@
                 mens.style.display = 'block'
             }
         }
+
+                function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                mens.style.display = 'block'
+            } else {
+                mens.style.dispaly = 'none'
+            }
+        }
+
     </script>
 </body>
 </html>
